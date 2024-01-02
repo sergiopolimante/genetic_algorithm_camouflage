@@ -75,7 +75,7 @@ Contributions can include bug fixes, feature additions, documentation improvemen
 If you use or refer to this genetic algorithm demonstration in your research or work, please consider citing it. You can use the following BibTeX entry as a reference:
 
 ```bibtex
-@misc{matrix-genetic-algorithm,
+@misc{camouflage-genetic-algorithm,
   author       = {Polimante, Sergio},
   title        = {Camouflage Genetic Algorithm},
   howpublished = {\url{https://github.com/yourusername/matrix-genetic-algorithm}},
