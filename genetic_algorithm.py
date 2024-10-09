@@ -13,7 +13,7 @@ mutation_rate = 0.01 # Mutation Probability
 
 
 # Function to calculate the fitness of an individual color
-def calculate_fitness(color):
+def calculate_fitness(color, target_color):
     # Fitness is the sum of the absolute differences from the target color
     return sum(abs(color[i] - target_color[i]) for i in range(3))
 
@@ -30,14 +30,14 @@ def crossover(parent1, parent2):
 
 
 # Perform mutation by changing colors with a specified intensity
-def mutate(color, intensity=mutation_intensity, sigma=1):
+def mutate(color, intensity=mutation_intensity, mutation_probability=10, sigma=1):
 
     mutated_color = list(color)
 
     for i in range(3):
-        if random.random() < mutation_rate:
-            # mutated_color[i] = int(color[i] * (1 + (random.choice([-1, 1])) * mutation_intensity)) ## percentage mutation
-            mutated_color[i] += round(np.random.normal(0, sigma)) # Gaussian mutation
+        if random.random() < (mutation_probability/100):
+            #mutated_color[i] = int(color[i] * (1 + (random.choice([-1, 1])) * mutation_intensity)) ## percentage mutation
+             mutated_color[i] += round(np.random.normal(0, sigma)) # Gaussian mutation
     return tuple(mutated_color)
 
 

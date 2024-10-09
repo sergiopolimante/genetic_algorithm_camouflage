@@ -179,7 +179,7 @@ while running:
     
     draw_squares(population)
 
-    draw_text(screen, f'Best Solution: {best_color}', 450, window_size[1]-50, font_size=15, font='Courier New')
+    draw_text(screen, f"Best Solution: {best_color}", 450, window_size[1]-50, font_size=15, font='Courier New')
     draw_text(screen, f'Target       : {tuple(target_color)}', 450, window_size[1]-50+15, font_size=15, font='Courier New')
 
     

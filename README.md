@@ -1,4 +1,4 @@
-# Camouflage Simulator
+# Matrix of Squares Genetic Algorithm
 
 This repository contains a simple interactive Python program that demonstrates a genetic algorithm optimizing a matrix of colored squares to match a target color, simulating the camouflage effect on nature.
 
