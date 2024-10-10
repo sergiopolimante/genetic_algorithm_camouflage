@@ -4,8 +4,6 @@ This repository contains a simple interactive Python program that demonstrates a
 
 ## Prerequisites
 
-Before running the program, make sure you have the following installed:
-
 - Download and Install conda environment manager.
   -  https://www.anaconda.com/download
 - create the `fiap_camouflage` environment
