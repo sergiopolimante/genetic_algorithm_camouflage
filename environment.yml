@@ -1,4 +1,4 @@
-name: fiap
+name: fiap_camouflage
 channels:
   - defaults
 dependencies:

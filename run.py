@@ -22,7 +22,7 @@ clock = pygame.time.Clock()
 
 #### GLOBAL VARIABLES ####
 FPS = 10
-target_color = [100, 150, 200]
+target_color = [140, 20, 60]
 
 
 
@@ -147,13 +147,14 @@ while running:
     i = next(generation_counter)    
     screen.fill(target_color)
 
-    population = sorted(population, key=calculate_fitness)
-    
+    # population = sorted(population, key=calculate_fitness)
+    population = sorted(population, key=lambda individual: calculate_fitness(individual, target_color))
+
         
     # population = sorted(population, key=lambda individual: calculate_fitness(individual, target_color))
 
     
-    best_fitness = calculate_fitness(population[0])
+    best_fitness = calculate_fitness(population[0], target_color)
     best_color = population[0]
     best_fitness_values.append(best_fitness)
     best_colors.append(best_color)

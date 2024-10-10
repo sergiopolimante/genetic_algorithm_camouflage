@@ -102,6 +102,7 @@ target_blue = st.sidebar.slider("Target Blue", 0, 255, 125, 1)
 st.sidebar.divider()
 mutation_probability = st.sidebar.slider("Mutation Probability", 0, 100, 10, 1)
 apply_elitism = st.sidebar.checkbox("Apply Elitism")
+#time = st.sidebar.slider("time", 1, 2, 1, 0.1)
 
 if st.sidebar.button("Run Simulation") or st.session_state.start_sim == True:
     st.session_state.start_sim = True
