@@ -1,4 +1,4 @@
-# Matrix of Squares Genetic Algorithm
+# Camouflage Simulator using Genetic Algorithm
 
 This repository contains a simple interactive Python program that demonstrates a genetic algorithm optimizing a matrix of colored squares to match a target color, simulating the camouflage effect on nature.
 
@@ -6,22 +6,30 @@ This repository contains a simple interactive Python program that demonstrates a
 
 Before running the program, make sure you have the following installed:
 
-- Python 3
-- Pygame library: `pip install pygame`
-- Matplotlib library: `pip install matplotlib`
-- Numpy library: `pip install numpy`
+- Download and Install conda environment manager.
+  -  https://www.anaconda.com/download
+- create the `fiap_camouflage` environment
+  - `conda env create --file environment.yml`
+- activate the environment
+  - `conda activate fiap_camouflage`  
+
+
+
 
 ## How to Run
 
 Execute the following command in your terminal to run the program:
 
+### Pygame
 ```bash
 python run.py
 ```
-
-## Instructions
-
 - **Quit the Program:** Press the 'q' key to quit the program.
+
+### Streamlit 
+```bash
+streamlit run app.py
+```
 
 ## Genetic Algorithm Parameters
 
