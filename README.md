@@ -22,7 +22,7 @@ Execute the following command in your terminal to run the program:
 ```bash
 python run.py
 ```
-- **Quit the Program:** Press the 'q' key to quit the program.
+> Press the 'q' key to quit the program.
 
 ### Streamlit 
 ```bash
